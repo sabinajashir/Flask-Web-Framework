@@ -8,7 +8,7 @@ def index():
 
 @app.route('/success/<int:score>')
 def success(score):
-    return 'The student passed with score : ' + str(score) +
+    return 'The student passed with score : ' + str(score)
 
 @app.route('/fail/<int:score>')
 def fail(score):
