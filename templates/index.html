@@ -1,15 +1,21 @@
 <html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='script/script.js') }}"></script>
+
+
+</head>
 <body>
 <h1>Welcome, Enter your marks..</h1>
 
-<form action="/submit" method="POST" >
-    <label for="Science">Science</label><br>
+<form action="/submit" method="POST" class="label">
+    <label for="Science" class ="label">Science</label><br>
     <input type="text" id="science" name="science" value="0"><br>
-    <label for="maths">Maths</label><br>
+    <label for="maths" class ="label">Maths</label><br>
     <input type="text" id="maths" name="maths" value="0"><br>
-    <label for="c">C</label><br>
+    <label for="c" class ="label">C</label><br>
     <input type="text" id="c" name="c" value="0"><br>
-    <label for="Data_Science">Data Science</label><br>
+    <label for="Data_Science" class ="label">Data Science</label><br>
     <input type="text" id="Data_Science" name="Data_Science" value="0"><br>
     <br>
     <input type="submit" value="Calculate">
